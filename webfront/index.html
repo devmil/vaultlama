@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-de="VaultLama · Dein Tresor. Überall, wo du ihn brauchst.">VaultLama · Your vault. Everywhere you need it.</title>
+  <meta name="description" data-de-content="VaultLama entsteht als quelloffener Passwortmanager-Client für deinen eigenen Vaultwarden-Server. Er ist in früher Entwicklung, noch nicht veröffentlicht und noch nicht für echte Zugangsdaten gedacht." content="VaultLama is being built as an open-source password manager client for your own Vaultwarden server. It is in early development, not released and not ready for real credentials.">
+  <link rel="canonical" href="https://devmil.de/vaultlama/">
+  <meta name="theme-color" content="#ECEBF2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0F0E15" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://devmil.de/vaultlama/">
+  <meta property="og:title" content="VaultLama · Your vault. Everywhere you need it." data-de-content="VaultLama · Dein Tresor. Überall, wo du ihn brauchst.">
+  <meta property="og:description" content="An open-source password manager client for Vaultwarden, in early development." data-de-content="Ein quelloffener Passwortmanager-Client für Vaultwarden, in früher Entwicklung.">
+  <meta property="og:image" content="https://devmil.de/vaultlama/assets/feature-graphic.png?v=543bf02e21d0">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="500">
+  <meta property="og:image:alt" content="The VaultLama app icon above a vault door, a masked password field and a padlock." data-de-content="Das VaultLama-App-Symbol über einer Tresortür, einem verdeckten Passwortfeld und einem Vorhängeschloss.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://devmil.de/vaultlama/assets/feature-graphic.png?v=543bf02e21d0">
+  <link rel="icon" href="assets/brand/icon-32.png?v=6fcc15135280" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png?v=3e427e64dded">
+  <link rel="stylesheet" href="style.css?v=d9036f13ef17">
+  <link rel="stylesheet" href="assets/lama/lama-antics.css?v=926d01e9bae2">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"VaultLama","url":"https://devmil.de/vaultlama/","applicationCategory":"SecurityApplication","description":"An open-source password manager client for Vaultwarden, in early development.","author":{"@type":"Organization","name":"Devmil Solutions"}}</script>
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="language.js?v=ff94dd695606" defer></script>
+  <script src="releases.js?v=ac72d6f0a076" defer></script>
+  <script src="assets/lama/lama-antics.js?v=fd9d7d8235fa" defer></script>
+  <script src="site.js?v=6ced0bd19426" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-de="Zum Inhalt springen">Skip to content</a>
+  <header class="site-header">
+    <a href="index.html" class="brand" aria-label="VaultLama home" data-de-aria-label="VaultLama-Startseite"><img src="assets/brand/icon-64.png?v=4031caec8579" width="30" height="30" alt=""><span translate="no">VaultLama</span></a>
+    <nav class="nav" aria-label="Primary" data-de-aria-label="Hauptnavigation">
+      <a href="#about" data-de="Überblick">Overview</a>
+      <a href="#principles" data-de="Grundsätze">Principles</a>
+      <a href="#features" data-de="Geplant">Planned</a>
+      <a href="#platforms" data-de="Plattformen">Platforms</a>
+      <a href="#status" data-de="Stand">Status</a>
+    </nav>
+    <div class="header-end">
+      <a id="header-release" class="header-release" href="#status"><span class="pulse" aria-hidden="true"></span><span data-de="Frühe Entwicklung">Early development</span></a>
+      <div class="lang-switch" role="group" aria-label="Language" data-de-aria-label="Sprache">
+        <button type="button" data-language="en" lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-language="de" lang="de" aria-pressed="false">DE</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="stage">
+        <div class="hero-copy">
+          <p class="eyebrow" data-de="Passwortmanager für Vaultwarden">Password manager for Vaultwarden</p>
+          <h1 id="hero-title"><span data-de="Dein Tresor.">Your vault.</span><br><span class="accent" data-de="Überall, wo du ihn brauchst.">Everywhere you need it.</span></h1>
+          <p class="intro" data-de="VaultLama entsteht als quelloffener Passwortmanager-Client für deinen eigenen Vaultwarden-Server. Geplant sind Apps für Smartphone, Tablet, Desktop, Web und Browser – mit automatischem Ausfüllen dort, wo du dich anmeldest.">VaultLama is being built as an open-source password manager client for your own Vaultwarden server. It is planned for phones, tablets, desktops, the web and browsers, with autofill where you sign in.</p>
+          <div class="actions">
+            <a class="button primary" href="#status"><span class="icon" style="--icon:url(assets/icons/arrow-right.svg?v=bb79220c8e96)"></span><span data-de="Zum Entwicklungsstand">Development status</span></a>
+            <a class="button ghost" href="#features" data-de="Was geplant ist">What is planned</a>
+          </div>
+          <ul class="hero-facts" aria-label="Status" data-de-aria-label="Stand">
+            <li><span class="dot" aria-hidden="true"></span><span data-de="Frühe Entwicklung">Early development</span></li>
+            <li data-de="Noch nicht für echte Zugangsdaten">Not ready for real credentials</li>
+            <li data-de="Noch keine Veröffentlichung">No releases yet</li>
+          </ul>
+        </div>
+        <!-- The Lama stands on its key, as in the app icon. The key runs into
+             a vault door. site.js sends masked vault items along the key;
+             the Lama jumps or hurdles each one, turns to watch it go into
+             the vault, and the door's wheel turns to lock it. Tapping the
+             Lama plays a gag (lama-antics.js). Reduced motion keeps the
+             scene still. -->
+        <div id="hero-scene" class="hero-scene" aria-hidden="true">
+          <svg viewBox="0 0 320 172" focusable="false">
+            <defs>
+              <radialGradient id="scene-glow" cx="0.45" cy="0.55" r="0.55">
+                <stop offset="0" stop-color="#D6C3FA" stop-opacity="0.30"/>
+                <stop offset="1" stop-color="#D6C3FA" stop-opacity="0"/>
+              </radialGradient>
+            </defs>
+            <rect class="glow" x="0" y="0" width="320" height="172" fill="url(#scene-glow)"/>
+            <ellipse class="floor" cx="150" cy="150" rx="132" ry="9"/>
+            <g class="key">
+              <circle cx="34" cy="128" r="13"/>
+              <path d="M47 128H234M196 128V142M210 128V139"/>
+            </g>
+            <g id="item-lane" class="item-lane"></g>
+            <g id="hero-lama" class="hero-lama is-hello">
+              <image class="pose proud" href="assets/lama/lama-proud.svg?v=a8d927b48be1" x="96" y="47" width="84" height="84"/>
+              <image class="pose hello" href="assets/lama/lama-standing-nod.svg?v=5c385b984c76" x="96" y="47" width="84" height="84"/>
+            </g>
+            <g id="vault" class="vault">
+              <rect class="vault-body" x="232" y="54" width="80" height="100" rx="14"/>
+              <rect class="vault-slot" x="228" y="110" width="9" height="26" rx="4"/>
+              <rect class="vault-door" x="241" y="62" width="62" height="84" rx="10"/>
+              <rect class="vault-hinge" x="303" y="74" width="5" height="14" rx="2"/>
+              <rect class="vault-hinge" x="303" y="120" width="5" height="14" rx="2"/>
+              <circle id="vault-light" class="vault-light" cx="292" cy="72" r="2.6"/>
+              <g id="vault-wheel" class="vault-wheel">
+                <circle cx="272" cy="98" r="15"/>
+                <path d="M272 85V111M259 98H285M262.8 88.8L281.2 107.2M281.2 88.8L262.8 107.2"/>
+                <circle class="hub" cx="272" cy="98" r="4.5"/>
+              </g>
+              <text id="vault-count" class="vault-count" x="272" y="134" text-anchor="middle"></text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section wrap" aria-labelledby="about-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-de="01 / Überblick">01 / Overview</p>
+        <h2 id="about-title" data-de="Ein Client für den Server deiner Wahl.">A client for the server you choose.</h2>
+        <p data-de="Vaultwarden ist ein von der Community gepflegter Server, der mit Bitwarden-Clients zusammenarbeitet. VaultLama soll die App auf deinen Geräten werden, die sich mit ihm verbindet – ohne VaultLama-Konto und ohne VaultLama-Cloud.">Vaultwarden is a community-maintained server that works with Bitwarden clients. VaultLama is meant to be the app on your devices that connects to it, with no VaultLama account and no VaultLama cloud.</p>
+      </div>
+      <div class="about-grid">
+        <article class="card reveal">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/server.svg?v=07fda1f7684c)"></span></span>
+          <h3 data-de="Dein Vaultwarden-Server">Your Vaultwarden server</h3>
+          <p data-de="Du gibst die Adresse deines Servers ein und siehst, welcher Server deine Anmeldung erhält. Dein verschlüsselter Tresor liegt dort und auf deinen Geräten.">You enter your server’s address and see which server receives your sign-in. Your encrypted vault lives there and on your devices.</p>
+        </article>
+        <article class="card reveal" style="--i:1">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/code-xml.svg?v=7a4e51736af4)"></span></span>
+          <h3 data-de="Quelloffen">Open source</h3>
+          <p data-de="VaultLama soll sich einsehen, verändern und weitergeben lassen. Die genaue Open-Source-Lizenz wird gewählt, sobald geprüft ist, welchen bestehenden Code VaultLama verwendet.">VaultLama is meant to be inspected, changed and shared. The exact open-source license is chosen once the code it reuses has been reviewed.</p>
+        </article>
+        <article class="card reveal" style="--i:2">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/layers.svg?v=cbe453187ca9)"></span></span>
+          <h3 data-de="Auf allen Geräten">On all your devices</h3>
+          <p data-de="Ein gemeinsamer Sicherheitskern in Rust, dazu Apps für Smartphones, Tablets und Desktops, ein Web-Tresor und Browser-Erweiterungen.">One shared security core in Rust, with apps for phones, tablets and desktops, a web vault and browser extensions.</p>
+        </article>
+      </div>
+      <p class="independence reveal" data-de="VaultLama ist ein unabhängiges Projekt. Es steht in keiner Verbindung zu Bitwarden, Inc. oder dem Vaultwarden-Projekt und wird von keinem der beiden unterstützt. Bitwarden ist eine Marke der Bitwarden, Inc.">VaultLama is an independent project. It is not affiliated with or endorsed by Bitwarden, Inc. or the Vaultwarden project. Bitwarden is a trademark of Bitwarden, Inc.</p>
+    </section>
+
+    <section id="principles" class="section wrap" aria-labelledby="principles-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-de="02 / Grundsätze">02 / Principles</p>
+        <h2 id="principles-title" data-de="Sicherheit entscheidet, wann es fertig ist.">Security decides when it is ready.</h2>
+        <p data-de="Eine gelungene Oberfläche oder eine funktionierende Anmeldung macht einen Passwortmanager noch nicht vertrauenswürdig. Diese Grundsätze aus der Vision des Projekts entscheiden, was erscheint – und wann.">A polished screen or a working sign-in does not make a password manager trustworthy. These principles from the project’s vision decide what ships, and when.</p>
+      </div>
+      <ol class="principles">
+        <li class="principle reveal">
+          <span class="principle-number mono">01</span>
+          <h3 data-de="Sicherheit bestimmt die Reife">Security determines readiness</h3>
+          <p data-de="Eine Funktion erscheint erst, wenn ihre Vertrauensgrenzen und Fehlerfälle geprüft sind.">A feature ships only after its trust boundaries and failure modes have been assessed.</p>
+        </li>
+        <li class="principle reveal" style="--i:1">
+          <span class="principle-number mono">02</span>
+          <h3 data-de="Bewährte Kryptografie">Established cryptography</h3>
+          <p data-de="VaultLama nutzt geprüfte Implementierungen und testet die Kompatibilität mit Vaultwarden. Eine eigene Verschlüsselung erfindet es nicht.">VaultLama reuses reviewed implementations and tests compatibility with Vaultwarden. It never invents its own encryption.</p>
+        </li>
+        <li class="principle reveal" style="--i:2">
+          <span class="principle-number mono">03</span>
+          <h3 data-de="So wenig Klartext wie möglich">Minimal secret exposure</h3>
+          <p data-de="Schlüssel bleiben im Sicherheitskern. Ein entschlüsseltes Feld erscheint nur für die Aufgabe, die es braucht, und wird danach wieder verdeckt.">Keys stay in the security core. A decrypted field appears only for the task that needs it, and is masked again afterwards.</p>
+        </li>
+        <li class="principle reveal">
+          <span class="principle-number mono">04</span>
+          <h3 data-de="Verlässlich offline">Works offline</h3>
+          <p data-de="Dein heruntergeladener Tresor bleibt verschlüsselt auf dem Gerät und öffnet sich nach dem Entsperren, auch wenn der Server nicht erreichbar ist.">Your downloaded vault stays encrypted on the device and opens after you unlock it, even when the server is out of reach.</p>
+        </li>
+        <li class="principle reveal" style="--i:1">
+          <span class="principle-number mono">05</span>
+          <h3 data-de="Nichts geht still verloren">Never silently lose data</h3>
+          <p data-de="Konflikte, unterbrochene Speichervorgänge, unbekannte Felder und Serverfehler enden in einem Zustand, aus dem du wieder herauskommst.">Conflicts, interrupted saves, unknown fields and server errors end in a state you can recover from.</p>
+        </li>
+        <li class="principle reveal" style="--i:2">
+          <span class="principle-number mono">06</span>
+          <h3 data-de="Du behältst die Kontrolle">You stay in control</h3>
+          <p data-de="Dein Tresor hängt nie von einem VaultLama-Konto oder einem Dienst ab, der deine Passwörter sieht. Ob gesperrt, offline oder beim Abgleich: Der Zustand ist immer klar erkennbar.">Your vault never depends on a VaultLama account or on a service that sees your passwords. Locked, offline or syncing: the state is always clear.</p>
+        </li>
+      </ol>
+
+      <div class="evidence reveal">
+        <div class="evidence-head">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/badge-check.svg?v=93c9feb86038)"></span></span>
+          <div>
+            <h3 data-de="Bevor echte Passwörter hineingehören">Before it holds real passwords</h3>
+            <p data-de="Eine Version wird erst für echte Zugangsdaten empfohlen, wenn diese Nachweise für genau diese Version vorliegen:">A release is recommended for real credentials only after this evidence exists for that release:</p>
+          </div>
+        </div>
+        <ul class="evidence-list">
+          <li data-de="Kompatibilitätstests mit unterstützten Vaultwarden-Versionen und einem anderen Client.">Interoperability tests with supported Vaultwarden versions and another client.</li>
+          <li data-de="Angriffstests mit fehlerhaften Daten, verwechselten Konten, Sperr-Wettläufen und täuschend ähnlichen Websites.">Adversarial tests with malformed data, mixed-up accounts, lock races and lookalike websites.</li>
+          <li data-de="Wiederherstellungstests für Abstürze, unterbrochene Schreibvorgänge und gleichzeitige Änderungen.">Recovery tests for crashes, interrupted writes and conflicting edits.</li>
+          <li data-de="Tests der installierten Apps auf echten Geräten, einschließlich automatischem Ausfüllen.">Tests of the installed apps on real devices, including autofill.</li>
+          <li data-de="Eine unabhängige Sicherheitsprüfung, deren Umfang und verbleibende Grenzen veröffentlicht werden.">An independent security assessment, with its scope and remaining limits published.</li>
+          <li data-de="Signierte Versionen und Updates sowie ein vertraulicher Weg, Schwachstellen zu melden.">Signed releases and updates, and a private way to report vulnerabilities.</li>
+        </ul>
+        <p class="evidence-note"><span class="icon" style="--icon:url(assets/icons/circle-alert.svg?v=62eac8e8edce)"></span><span data-de="Nichts davon liegt bisher vor. VaultLama wurde noch keiner Sicherheitsprüfung unterzogen.">None of this exists yet. VaultLama has not had a security audit.</span></p>
+      </div>
+    </section>
+
+    <section id="features" class="section wrap" aria-labelledby="features-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-de="03 / Geplant">03 / Planned</p>
+        <h2 id="features-title" data-de="Was VaultLama können soll.">What VaultLama is planned to do.</h2>
+        <p data-de="Das Ziel ist ein Passwortmanager für den Alltag von Einzelpersonen, Familien und kleinen Teams. Nichts davon ist bisher verfügbar.">The goal is an everyday password manager for individuals, families and small teams. None of it is available yet.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature reveal">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/key-round.svg?v=c6339e38ebfd)"></span></span>
+          <h3><span data-de="Ausfüllen überall">Autofill everywhere</span> <span class="badge" data-de="Geplant">Planned</span></h3>
+          <p data-de="Anmeldedaten in Browsern und mobilen Apps ausfüllen, nachdem VaultLama die anfragende Website oder App geprüft hat. Ausgefüllt wird erst nach einem bewussten Tippen oder Klicken.">Fill sign-ins in browsers and mobile apps after VaultLama has checked the website or app that asks. Nothing is filled without a deliberate tap or click.</p>
+        </article>
+        <article class="feature reveal" style="--i:1">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/wifi-off.svg?v=23c5847c31d0)"></span></span>
+          <h3><span data-de="Offline-Tresor">Offline vault</span> <span class="badge" data-de="Geplant">Planned</span></h3>
+          <p data-de="Deinen Tresor ohne Verbindung durchsuchen und lesen. Offline gemachte Änderungen bleiben verschlüsselt gespeichert, bis sie abgeglichen werden können.">Search and read your vault without a connection. Changes made offline stay encrypted on the device until they can sync.</p>
+        </article>
+        <article class="feature reveal" style="--i:2">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/users.svg?v=b98feb911238)"></span></span>
+          <h3><span data-de="Teilen">Sharing</span> <span class="badge" data-de="Geplant">Planned</span></h3>
+          <p data-de="Zugangsdaten mit Familie und kleinen Teams über Organisationen und Sammlungen in Vaultwarden teilen, mit klaren Besitz- und Zugriffsrechten.">Share logins with family and small teams through Vaultwarden organizations and collections, with clear ownership and permissions.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/key.svg?v=037d94147e77)"></span></span>
+          <h3><span translate="no">Passkeys</span> <span class="badge" data-de="Geplant">Planned</span></h3>
+          <p data-de="Passkeys für Websites und Apps über die Schnittstellen des Systems speichern und nutzen, sofern Vaultwarden und das System es unterstützen.">Store and use passkeys for websites and apps through the system’s own interfaces, where Vaultwarden and the system support them.</p>
+        </article>
+        <article class="feature reveal" style="--i:1">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/wand-sparkles.svg?v=febd4e9cb696)"></span></span>
+          <h3><span data-de="Generator">Generator</span> <span class="badge" data-de="Geplant">Planned</span></h3>
+          <p data-de="Starke Passwörter, Passphrasen und Benutzernamen, direkt auf deinem Gerät erzeugt. Neue Zugangsdaten speichern oder nach einer Passwortänderung aktualisieren.">Strong passwords, passphrases and usernames, created on your device. Save a new login, or update one after a password change.</p>
+        </article>
+        <article class="feature reveal" style="--i:2">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/shield-alert.svg?v=0ae0aa2084f0)"></span></span>
+          <h3><span data-de="Sicherheitsberichte">Security reports</span> <span class="badge" data-de="Geplant">Planned</span></h3>
+          <p data-de="Schwache und mehrfach verwendete Passwörter finden, damit du weißt, welche du zuerst ändern solltest.">Find weak and reused passwords, so you know which ones to change first.</p>
+        </article>
+        <article class="feature reveal">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/arrow-left-right.svg?v=45533aab2a26)"></span></span>
+          <h3><span data-de="Import und Export">Import and export</span> <span class="badge" data-de="Geplant">Planned</span></h3>
+          <p data-de="Deinen Tresor aus einem anderen Passwortmanager übernehmen, eine verschlüsselte Sicherung exportieren und prüfen, ob sie sich wiederherstellen lässt.">Bring your vault from another password manager, export an encrypted backup, and check that it can be restored.</p>
+        </article>
+        <article class="feature reveal" style="--i:1">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/lock.svg?v=7025fec7e013)"></span></span>
+          <h3><span data-de="Sperren und Entsperren">Lock and unlock</span> <span class="badge" data-de="Geplant">Planned</span></h3>
+          <p data-de="Mit deinem Master-Passwort oder einer eingerichteten Methode des Systems wie dem Fingerabdruck entsperren, und nach deinen Vorgaben wieder sperren.">Unlock with your master password or an enrolled system method such as a fingerprint, and lock again on your terms.</p>
+        </article>
+        <article class="feature reveal" style="--i:2">
+          <span class="card-icon"><span class="icon" style="--icon:url(assets/icons/shield-check.svg?v=a113fc3eaa03)"></span></span>
+          <h3><span data-de="Zweistufige Anmeldung">Two-step login</span> <span class="badge" data-de="Geplant">Planned</span></h3>
+          <p data-de="Mit den zweiten Faktoren anmelden, die dein Vaultwarden-Server unterstützt. Bei Zertifikatsfehlern gibt es keine Abkürzung, die die Prüfung umgeht.">Sign in with the second factors your Vaultwarden server supports. Certificate errors never come with a shortcut around the check.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="platforms" class="section wrap" aria-labelledby="platforms-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-de="04 / Plattformen">04 / Platforms</p>
+        <h2 id="platforms-title" data-de="Geplant für jedes Gerät, das du nutzt.">Planned for every device you use.</h2>
+        <p data-de="Alle Plattformfamilien gehören zum Plan. Sie können nacheinander erscheinen. Jede wird mit installierten Apps auf echten Geräten getestet, bevor sie als unterstützt gilt.">Every platform family is part of the plan. They may arrive one after another. Each is tested with installed apps on real devices before it counts as supported.</p>
+      </div>
+      <div class="platform-grid">
+        <article class="platform-card reveal">
+          <div class="platform-top"><span class="icon" style="--icon:url(assets/icons/smartphone.svg?v=e94664ef18b6)"></span><span class="badge" data-de="Geplant">Planned</span></div>
+          <h3 translate="no">Android</h3>
+          <p data-de="Smartphones und Tablets, mit dem Autofill- und Passkey-Dienst des Systems.">Phones and tablets, with the system’s autofill and passkey services.</p>
+        </article>
+        <article class="platform-card reveal" style="--i:1">
+          <div class="platform-top"><span class="icon" style="--icon:url(assets/icons/smartphone.svg?v=e94664ef18b6)"></span><span class="badge" data-de="Geplant">Planned</span></div>
+          <h3 data-de="iPhone und iPad">iPhone and iPad</h3>
+          <p data-de="Eine vollständige Tresor-App und eine Erweiterung, die Passwörter und Passkeys bereitstellt.">A full vault app and an extension that provides passwords and passkeys.</p>
+        </article>
+        <article class="platform-card reveal" style="--i:2">
+          <div class="platform-top"><span class="icon" style="--icon:url(assets/icons/monitor.svg?v=b45a21cadac4)"></span><span class="badge" data-de="Geplant">Planned</span></div>
+          <h3 translate="no">Windows</h3>
+          <p data-de="Tresorverwaltung am Desktop, mit Anbindung an deine Browser.">Desktop vault management, connected to your browsers.</p>
+        </article>
+        <article class="platform-card reveal" style="--i:3">
+          <div class="platform-top"><span class="icon" style="--icon:url(assets/icons/monitor.svg?v=b45a21cadac4)"></span><span class="badge" data-de="Geplant">Planned</span></div>
+          <h3 translate="no">macOS</h3>
+          <p data-de="Tresorverwaltung am Desktop, mit Anbindung an deine Browser einschließlich Safari.">Desktop vault management, connected to your browsers including Safari.</p>
+        </article>
+        <article class="platform-card reveal">
+          <div class="platform-top"><span class="icon" style="--icon:url(assets/icons/monitor.svg?v=b45a21cadac4)"></span><span class="badge" data-de="Geplant">Planned</span></div>
+          <h3 translate="no">Linux</h3>
+          <p data-de="Tresorverwaltung am Desktop für verbreitete Distributionen, unter Wayland und X11.">Desktop vault management on common distributions, on Wayland and X11.</p>
+        </article>
+        <article class="platform-card reveal" style="--i:1">
+          <div class="platform-top"><span class="icon" style="--icon:url(assets/icons/app-window.svg?v=6c1e37d1fcc2)"></span><span class="badge" data-de="Geplant">Planned</span></div>
+          <h3 data-de="Web-Tresor">Web vault</h3>
+          <p data-de="Deinen Tresor im Browser öffnen und verwalten, mit klar benannten Grenzen für die Offline-Nutzung.">Open and manage your vault in a browser, with clearly stated limits for offline use.</p>
+        </article>
+        <article class="platform-card reveal" style="--i:2">
+          <div class="platform-top"><span class="icon" style="--icon:url(assets/icons/puzzle.svg?v=4f4fffc33df6)"></span><span class="badge" data-de="Geplant">Planned</span></div>
+          <h3 data-de="Browser-Erweiterungen">Browser extensions</h3>
+          <p data-de="Für Chromium-basierte Browser, Firefox und Safari: suchen, ausfüllen, Passwörter erzeugen und speichern.">For Chromium-based browsers, Firefox and Safari: search, fill, generate and save.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="privacy" class="section wrap" aria-labelledby="privacy-title">
+      <div class="privacy reveal">
+        <div class="privacy-copy">
+          <p class="eyebrow" data-de="05 / Datenschutz">05 / Privacy</p>
+          <h2 id="privacy-title" data-de="Dein Tresor geht an deinen Server. Sonst nirgendwohin.">Your vault goes to your server. Nowhere else.</h2>
+          <p data-de="VaultLama ist so geplant, dass der einzige Dienst, mit dem es über deinen Tresor spricht, der Vaultwarden-Server ist, den du gewählt hast.">VaultLama is designed so that the only service it talks to about your vault is the Vaultwarden server you chose.</p>
+          <ul class="checks">
+            <li data-de="Kein VaultLama-Konto und keine VaultLama-Cloud. Über deinen Tresor geht nichts an Devmil Solutions.">No VaultLama account and no VaultLama cloud. Nothing about your vault goes to Devmil Solutions.</li>
+            <li data-de="Keine Analyse, Telemetrie oder Werbung in der App, und keine Geheimnisse in Protokollen oder Absturzberichten.">No analytics, telemetry or advertising in the app, and no secrets in logs or crash reports.</li>
+            <li data-de="Die heutigen Entwicklungsversionen bauen überhaupt keine Internetverbindung auf.">Today’s development builds make no internet connections at all.</li>
+            <li data-de="Diese Website verwendet keine Analysedienste und keine Cookies und lädt nichts von Servern Dritter.">This website has no analytics and no cookies, and loads nothing from other servers.</li>
+          </ul>
+        </div>
+        <div class="privacy-art" aria-hidden="true">
+          <div class="route-card">
+            <div class="route-head"><span class="icon" style="--icon:url(assets/icons/lock.svg?v=7025fec7e013)"></span><span data-de="Verbindungen">Connections</span></div>
+            <dl>
+              <div><dt data-de="Dein Server">Your server</dt><dd class="ok mono" translate="no">vault.example.org</dd></div>
+              <div><dt data-de="VaultLama-Cloud">VaultLama cloud</dt><dd data-de="keine">none</dd></div>
+              <div><dt data-de="Analyse">Analytics</dt><dd data-de="keine">none</dd></div>
+              <div><dt data-de="Telemetrie">Telemetry</dt><dd data-de="keine">none</dd></div>
+            </dl>
+          </div>
+          <img class="privacy-lama" src="assets/lama/lama-resting.svg?v=a92936df666c" width="150" height="150" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section id="status" class="section wrap" aria-labelledby="status-title">
+      <div class="download-stage reveal">
+        <span class="download-lama" aria-hidden="true"><img src="assets/lama/lama-standing.svg?v=516278e37d01" width="132" height="132" alt=""></span>
+        <div>
+          <p class="eyebrow" data-de="06 / Stand">06 / Status</p>
+          <h2 id="status-title" data-de="Entwicklungsstand">Development status</h2>
+          <p id="download-lead" data-de="VaultLama steckt in der Grundlagenphase: Das App-Gerüst, der Rust-Kern und die Build-Abläufe stehen, Tresorfunktionen gibt es noch keine. Es gibt keine Veröffentlichung. Bitte verwende Entwicklungsversionen nicht mit echten Zugangsdaten.">VaultLama is in its foundation phase: the app shell, the Rust core and the build pipeline exist, but no vault features yet. There are no releases. Please do not use development builds with real credentials.</p>
+        </div>
+      </div>
+      <div id="release-status" class="release-status" role="status" aria-live="polite" data-de="Noch keine öffentliche Version. Downloads erscheinen hier, sobald eine veröffentlicht ist.">No public release yet. Downloads appear here once one is published.</div>
+      <div id="release-bar" class="release-bar" hidden></div>
+      <div id="download-grid" class="download-grid" hidden></div>
+      <noscript><p class="release-status" data-de="Für die Download-Links wird JavaScript benötigt.">JavaScript is required to show the download links.</p></noscript>
+
+      <h3 class="roadmap-title" data-de="Meilensteine – nach Abhängigkeiten geordnet, nicht nach Terminen">Milestones, ordered by dependency, not by date</h3>
+      <ol class="roadmap">
+        <li class="milestone reveal">
+          <div class="milestone-top"><span class="principle-number mono">1</span><span class="chip" data-de="Als Nächstes">Next</span></div>
+          <h4 data-de="Riskante Grenzen erproben">Prove the risky boundaries</h4>
+          <p data-de="Wiederverwendung des Kerns, Protokollverhalten, Herkunftsprüfung im Browser und mobiles Ausfüllen – getestet mit erfundenen Zugangsdaten auf Wegwerf-Servern.">Core reuse, protocol behaviour, browser origin matching and mobile autofill, tested with made-up credentials on disposable servers.</p>
+        </li>
+        <li class="milestone reveal" style="--i:1">
+          <div class="milestone-top"><span class="principle-number mono">2</span><span class="chip plain" data-de="Später">Later</span></div>
+          <h4 data-de="Gemeinsames Tresor-Fundament">Shared vault foundation</h4>
+          <p data-de="Anmeldung, verschlüsselter Zwischenspeicher, Suche, Anzeigen und Sperren.">Sign-in, encrypted cache, search, reveal and locking.</p>
+        </li>
+        <li class="milestone reveal" style="--i:2">
+          <div class="milestone-top"><span class="principle-number mono">3</span><span class="chip plain" data-de="Später">Later</span></div>
+          <h4 data-de="Bearbeiten und Ausfüllen">Editing and autofill</h4>
+          <p data-de="Dauerhaft verschlüsselte Änderungen, Abgleich zwischen zwei Clients, Sicherung und Wiederherstellung, erstes automatisches Ausfüllen.">Durable encrypted changes, sync between two clients, backup and restore, the first autofill.</p>
+        </li>
+        <li class="milestone reveal" style="--i:3">
+          <div class="milestone-top"><span class="principle-number mono">4</span><span class="chip plain" data-de="Später">Later</span></div>
+          <h4 data-de="Alle Plattformen">Every platform</h4>
+          <p data-de="Der erprobte Kern auf allen Desktop-, Mobil-, Web- und Browser-Oberflächen.">The proven core on every desktop, mobile, web and browser surface.</p>
+        </li>
+        <li class="milestone reveal" style="--i:4">
+          <div class="milestone-top"><span class="principle-number mono">5</span><span class="chip plain" data-de="Später">Later</span></div>
+          <h4 data-de="Vertrauen verdienen">Earn trust</h4>
+          <p data-de="Unabhängige Prüfung, signierte Versionen und Updates und ein dauerhafter Umgang mit gemeldeten Schwachstellen.">Independent assessment, signed releases and updates, and an ongoing response to reported vulnerabilities.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="source" class="section wrap" aria-labelledby="source-title">
+      <div class="source reveal">
+        <div>
+          <p class="eyebrow" data-de="07 / Nachvollziehbar">07 / Transparency</p>
+          <h2 id="source-title" data-de="Vertrauen braucht Nachweise.">Trust needs evidence.</h2>
+          <p data-de="Einem Passwortmanager vertraut man wegen Code und Nachweisen, die andere prüfen können – nicht wegen Versprechen. Der Quellcode von VaultLama soll unter einer anerkannten Open-Source-Lizenz erscheinen. Bis dahin enthält das öffentliche Repository diese Website.">You trust a password manager because of code and evidence that others can check, not because of claims. VaultLama’s source code is to be published under a recognised open-source license. Until then, the public repository holds this website.</p>
+        </div>
+        <a class="button outline" href="https://github.com/devmil/vaultlama"><span class="icon" style="--icon:url(assets/icons/code-xml.svg?v=7a4e51736af4)"></span><span data-de="Repository auf GitHub">Repository on GitHub</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="signature" role="img" aria-label="The Lama signature" data-de-aria-label="Die Lama-Signatur"></span><div><strong translate="no">VaultLama</strong><p><span data-de="Ein Passwortmanager von">A password manager by</span> <a href="https://devmil.de/" translate="no">Devmil Solutions</a>.</p></div></div>
+    <nav aria-label="Footer" data-de-aria-label="Fußzeile"><a href="releases.html" data-de="Versionshinweise">Release notes</a><a href="imprint.html" data-de-href="de/imprint.html" data-de="Impressum">Imprint</a><a href="privacy.html" data-de-href="de/privacy.html" data-de="Datenschutz">Privacy</a></nav>
+    <p data-de="Keine Analysedienste. Keine Cookies. Keine Tracking-Skripte.">No analytics. No cookies. No tracking scripts.</p>
+  </footer>
+</body>
+</html>
